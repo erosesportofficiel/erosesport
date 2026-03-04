@@ -1,0 +1,464 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Montserrat', sans-serif;
+}
+
+body{
+background:black;
+color:white;
+}
+
+/* NAVBAR */
+
+header{
+position:absolute;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:25px 60px;
+z-index:10;
+}
+
+/* LOGO */
+
+.logo img{
+height:80px;
+}
+
+/* NAV */
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:35px;
+font-size:14px;
+font-weight:500;
+opacity:0.6;
+transition:0.3s;
+}
+
+/* onglet actif */
+
+nav a.active{
+opacity:1;
+}
+
+/* hover */
+
+nav a:hover{
+opacity:1;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+background:url("images/hero.png") center/cover no-repeat;
+position:relative;
+}
+
+.hero-overlay{
+position:absolute;
+bottom:0;
+width:100%;
+height:40%;
+background:linear-gradient(to top, black, transparent);
+}
+
+/* SECTIONS */
+
+.presentation{
+padding:120px 10%;
+max-width:900px;
+}
+
+.presentation h2{
+margin-bottom:20px;
+font-size:28px;
+}
+
+.presentation p{
+opacity:0.8;
+line-height:1.7;
+}
+
+.objectifs{
+padding:60px 10%;
+max-width:900px;
+}
+
+.objectifs ul{
+margin-top:15px;
+line-height:32px;
+opacity:0.85;
+}
+
+/* PAGE TEAM */
+
+.team-page{
+
+background:url("images/team-bg.jpg") center/cover no-repeat;
+
+min-height:100vh;
+
+padding-top:160px;
+
+padding-bottom:120px;
+
+display:flex;
+
+justify-content:center;
+
+}
+
+
+/* GRID */
+
+.team-grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,260px);
+
+gap:80px;
+
+}
+
+
+/* PLAYER CARD */
+
+.player-card{
+
+width:260px;
+
+border-radius:22px;
+
+overflow:hidden;
+
+background:linear-gradient(to bottom,#3f8ed6,#1a1a1a);
+
+box-shadow:0 15px 40px rgba(0,0,0,0.7);
+
+display:flex;
+
+flex-direction:column;
+
+}
+
+
+/* AVATAR PART */
+
+.avatar{
+
+height:160px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+}
+
+/* PHOTO */
+
+.avatar img{
+
+width:90px;
+
+height:90px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+border:4px solid black;
+
+}
+
+
+/* INFO */
+
+.player-info{
+
+background:#0b0b0b;
+
+padding:22px;
+
+flex:1;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:space-between;
+
+}
+
+
+/* HEADER */
+
+.player-header{
+
+display:flex;
+
+justify-content:space-between;
+
+font-weight:600;
+
+font-size:17px;
+
+margin-bottom:6px;
+
+}
+
+
+/* DESCRIPTION */
+
+.player-desc{
+
+font-size:13px;
+
+opacity:0.7;
+
+margin-bottom:18px;
+
+}
+
+
+/* FLAG */
+
+.player-flag{
+
+text-align:center;
+
+font-size:14px;
+
+letter-spacing:2px;
+
+opacity:0.8;
+
+}
+
+.recruit-grid{
+
+display:flex;
+
+justify-content:center;
+
+gap:40px;
+
+flex-wrap:wrap;
+
+margin-top:60px;
+
+}
+
+.recruit-card{
+
+width:320px;
+
+padding:30px;
+
+background:#0b0b0b;
+
+border-radius:12px;
+
+text-align:center;
+
+text-decoration:none;
+
+color:white;
+
+transition:0.3s;
+
+border:1px solid rgba(255,255,255,0.08);
+
+}
+
+.recruit-card:hover{
+
+transform:translateY(-6px);
+
+background:#111;
+
+border-color:#2c7be5;
+
+}
+
+.recruit-card h2{
+
+margin-bottom:15px;
+
+font-size:20px;
+
+}
+
+.recruit-card p{
+
+opacity:0.75;
+
+font-size:14px;
+
+}
+
+/* carte inactive */
+
+.disabled{
+
+opacity:0.5;
+
+cursor:not-allowed;
+
+}
+
+.soon{
+
+display:block;
+
+margin-top:15px;
+
+font-size:13px;
+
+opacity:0.7;
+
+}
+
+.recrutement-section{
+
+padding-top:180px;
+
+padding-bottom:120px;
+
+display:flex;
+
+justify-content:center;
+
+}
+
+.recruit-container{
+
+max-width:1200px;
+
+text-align:center;
+
+}
+
+.recruit-container h1{
+
+font-size:42px;
+
+margin-bottom:20px;
+
+}
+
+.recruit-desc{
+
+opacity:0.7;
+
+margin-bottom:60px;
+
+}
+
+.recruit-grid{
+
+display:flex;
+
+justify-content:center;
+
+gap:40px;
+
+flex-wrap:wrap;
+
+}
+
+/* PAGE RESEAUX */
+
+.reseaux-section{
+
+padding-top:180px;
+padding-bottom:120px;
+
+display:flex;
+justify-content:center;
+
+}
+
+.reseaux-container{
+
+max-width:1200px;
+text-align:center;
+
+}
+
+.reseaux-container h1{
+
+font-size:42px;
+margin-bottom:20px;
+
+}
+
+.reseaux-desc{
+
+opacity:0.7;
+margin-bottom:60px;
+
+}
+
+/* GRID */
+
+.reseaux-grid{
+
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+
+}
+
+/* CARD */
+
+.reseau-card{
+
+width:260px;
+padding:30px;
+
+background:#0b0b0b;
+
+border-radius:14px;
+
+text-decoration:none;
+color:white;
+
+border:1px solid rgba(255,255,255,0.08);
+
+transition:0.3s;
+
+}
+
+.reseau-card:hover{
+
+transform:translateY(-6px);
+
+border-color:#2c7be5;
+
+background:#111;
+
+}
+
+.reseau-card h2{
+
+margin-bottom:15px;
+
+}
+
+.reseau-card p{
+
+font-size:14px;
+opacity:0.75;
+
+}
